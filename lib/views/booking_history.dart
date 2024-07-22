@@ -88,11 +88,12 @@ class _BookingHistoryState extends State<BookingHistory> {
                           const Divider(),
                           rowText(key: "Email", value: booking.email ?? ""),
                           const Divider(),
-                          rowText(key: "City", value: ''),
+                          rowText(
+                              key: "City", value: booking.address!.city ?? ''),
                           const Divider(),
-                          rowText(key: "Phone", value: 'value'),
+                          rowText(key: "Phone", value: booking.phone ?? ""),
                           const Divider(),
-                          rowText(key: "Website", value: 'value')
+                          rowText(key: "Website", value: booking.website ?? "")
                         ],
                       ),
                     );
